@@ -1,0 +1,37 @@
+.digital-marketing {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 60px 200px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.service-title {
+    font-size: 1.4rem;
+    color: #6b1ac8;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.service-description {
+    font-size: 1rem;
+    color: #555;
+}

@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #892ae1;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Navbar */
+  nav {
+    background-color: #892ae1; /* Light Blue */
+  }
+
+  .navbar-nav .nav-link {
+    font-weight: 500;
+    color: #2c3e50 !important; /* Dark Blue for text */
+    transition: color 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #f39c12 !important; /* Soft Yellow on hover */
+  }
+
+  .navbar-brand img {
+    height: 50px;
+  }
+
+  .navbar-nav .nav-item.active .nav-link {
+    color: #1d5a8c !important; /* Darker Blue when active */
+  }
+
+  /* Carousel */
+  .carousel-item img {
+    object-fit: cover;
+    height: 60vh;
+    max-height: 600px;
+  }
+
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 2rem;
+    color: #f1faee;
+  }
+
+  .carousel-caption p {
+    color: #f1faee;
+  }
+
+  /* Section Styles */
+
+  .why-choose-us {
+    padding: 60px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 20px; /* Increased value for rounder corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+    justify-content: space-between; /* Distribute the space evenly */
+    height: 100%; /* Make sure all cards have equal height */
+    min-height: 300px; /* Minimum height to maintain consistency */
+  }
+  
+  .card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #892ae1;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Darker shadow for heading */
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px; /* Add some space at the bottom for consistency */
+    flex-grow: 1; /* Allow the paragraph to take up available space */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Lighter shadow for text */
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 60px 200px rgba(0, 0, 0, 0.2);
+  }
+  
+  .testimonials h2 {
+    font-size: 2.5rem; /* Adjust size */
+    color: #892ae1; /* Desired color */
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2), -3px -3px 5px rgba(0, 0, 0, 0.1); /* Initial 3D effect */
+    transition: all 0.3s ease; /* Smooth transition for both text-shadow and transform */
+    animation: text3DAnimation 2s infinite; /* Add animation for 3D effect */
+  }
+  
+  @keyframes text3DAnimation {
+    0% {
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2), -3px -3px 5px rgba(0, 0, 0, 0.1);
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+      text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3), -6px -6px 10px rgba(0, 0, 0, 0.2);
+      transform: rotateX(10deg) rotateY(10deg);
+    }
+    100% {
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2), -3px -3px 5px rgba(0, 0, 0, 0.1);
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+  }
+  
+  .testimonials h2:hover {
+    text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.4), -6px -6px 15px rgba(0, 0, 0, 0.2); /* Stronger 3D effect on hover */
+    transform: rotateX(15deg) rotateY(15deg); /* Rotation for more depth on hover */
+  }
+  
+  .testimonial-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .testimonial-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .testimonial-card img:hover {
+    transform: scale(1.1);
+  }
+
+  .testimonial-text {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  .testimonial-name {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .testimonial-position {
+    font-size: 0.9em;
+    color: #777;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .why-choose-us .container {
+      flex-direction: column;
+    }
+
+    .card {
+      width: 90%;
+      margin-bottom: 30px;
+    }
+
+    .testimonial-card {
+      width: 90%;
+      margin-bottom: 30px;
+    }
+
+    .carousel-item img {
+      height: 50vh;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  /* Styling for all h2 elements */
+h2 {
+     /* Start from above */
+    animation: fadeInUp 1s ease-out forwards, text3DAnimation 2s infinite; /* Combining animations */
+    padding: 0 20px; /* Padding for text within the container */
+  }
+  
+  /* Fade-in and slide-up effect */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px); /* Start from above */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* End in its normal position */
+    }
+  }
+  
+  /* 3D text animation */
+  @keyframes text3DAnimation {
+    0% {
+      text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+      text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.4);
+      transform: rotateX(8deg) rotateY(8deg); /* Subtle rotation for the 3D effect */
+    }
+    100% {
+      text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+  }
+  
+  /* Hover effect: stronger 3D effect on hover */
+  h2:hover {
+    text-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5); /* Stronger 3D shadow on hover */
+    transform: rotateX(15deg) rotateY(15deg); /* Rotate more on hover */
+  }
+  
+  
+
+/*Footer*/
+  footer a:hover {
+    color: #f39c12 !important; /* Hover effect: soft yellow for links */
+  }
+  footer{
+    background-color: #892ae1;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 50px;
+  }
