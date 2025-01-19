@@ -20,7 +20,7 @@
 
   /* Navbar */
   nav {
-    background-color: #892ae1; /* Light Blue */
+    background-color: ghostwhite; /* Light Blue */
   }
 
   .navbar-nav .nav-link {
@@ -72,6 +72,7 @@
   }
   
   .card {
+    margin-top: 20px;
     background-color: #fff;
     border-radius: 20px; /* Increased value for rounder corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
